@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="game.js" charset="utf-8"> </script>
+
+  </head>
+  <body>
+    <div class="header">
+    <h3 id="title"> Rock, Paper, Scissors</h3>
+    </div>
+    <div id="rnd" align="center"><h3 id="round">Round 1</h3> </div>
+    <div id="player" class="opponent">
+      <h4 align="center" id="pscore"> Score: 0</h4>
+      <img src="images/rock-left.png" alt="rock" class="imgs" id="left-img">
+      <div id="selections">
+        <img src="images/rock-left.png" alt="rock" class="mini" id="rock" onclick="rps('images/rock-left.png',0)">
+        <img src="images/paper-left.png" alt="paper" class="mini" id="paper" onclick="rps('images/paper-left.png',1)">
+        <img src="images/scissors-left.png" alt="scissors" class="mini" id="scissors" onclick="rps('images/scissors-left.png',2)">
+      </div>
+    </div>
+    <div id="computer" class="opponent">
+        <h4 align="center" id="cscore"> Score: 0</h4>
+        <img src="images/rock-right.png" alt="rock" class="imgs" id="right-img">
+    </div>
+
+    <div >
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+
+
+
+
+
+
+
+
+  <div class="footer">
+    <a href="https://github.com/ahmedwab"><img src="images/github.png" alt="Github Profile(ahmedwab)" id="gh"></a>
+  </div>
+  </body>
+</html>
